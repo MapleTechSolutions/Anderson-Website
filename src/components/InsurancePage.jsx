@@ -3,6 +3,7 @@ import Footer from './Footer';
 import InsuranceHero from './InsuranceHero';
 import InsuranceSecure from './InsuranceSecure';
 import compassImg from '../../images/ahmed-zayan-n_YWKiIBnp4-unsplash.jpg';
+import heroImg from '../../images/annie-spratt-IT6aov1ScW0-unsplash.jpg';
 import InsuranceCTA from './InsuranceCTA';
 import InsuranceFAQ from './InsuranceFAQ';
 import AboutPageHeader from './AboutPageHeader';
@@ -13,12 +14,12 @@ export default function InsurancePage() {
   return (
     <>
       <Header variant="light" />
-      <AboutPageHeader 
+      <AboutPageHeader
         title="Insurance"
         label="Services"
       />
       <InsuranceHero
-        img="../../images/annie-spratt-IT6aov1ScW0-unsplash.jpg"
+        img={heroImg}
         title="PROTECT WHAT MATTERS MOST"
         title1="Customized Insurance"
         title2="Solutions For Your Peace Of Mind"

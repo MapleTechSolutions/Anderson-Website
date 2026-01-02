@@ -10,6 +10,9 @@ import StoryJourney from '../components/StoryJourney';
 import CTASection from '../components/CTASection';
 import OfferedServices from '../components/OfferedServices';
 import FinalCTA from '../components/FinalCTA';
+import founderImg from '../../images/ANP_6333-Web.jpg';
+import ashleyImg from '../../images/Ashley-Healey-Anderson-Wealth.jpg';
+
 export default function AboutPage() {
   return (
     <div className="about-page">
@@ -19,18 +22,18 @@ export default function AboutPage() {
         label="AWM"
       />
       <AboutContentGrid />
-      <AboutTeamMember 
+      <AboutTeamMember
         name="Anderson Founder"
         title="Founder & Lead Advisor"
         bio={[
           "With over 20 years of experience in wealth management, our founder established Anderson Wealth Management with a vision to create a different kind of financial advisory firm – one centered on relationships, transparency, and genuine client care.",
           "Having guided countless families through market cycles and life transitions, the founder brings a wealth of knowledge and a deep commitment to helping clients achieve their financial aspirations with confidence and peace of mind."
         ]}
-        image="images/ANP_6333-Web.jpg"
+        image={founderImg}
         email="evan.anderson@andersonwealth.ca"
         flipped={true}
       />
-      <AboutTeamMember 
+      <AboutTeamMember
         name="Ashley Healey"
         title="Licensed Assistant"
         bio={[
@@ -38,7 +41,7 @@ export default function AboutPage() {
           "Ashley joined the financial services industry in 2020, driven by a passion to empower clients with financial knowledge and confidence. Her enthusiasm comes from making a tangible, positive impact on the lives of individuals and families as they work toward their dreams."
         ]}
         email="admin@andersonwealth.ca"
-        image="/images/Ashley-Healey-Anderson-Wealth.jpg"
+        image={ashleyImg}
         flipped={false}
       />
       <ClientStory />

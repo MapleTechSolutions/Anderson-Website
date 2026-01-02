@@ -7,6 +7,7 @@ import InsuranceHero from './InsuranceHero';
 import Banner from './Banner';
 import InsuranceSecure from './InsuranceSecure';
 import compassImg from '../../images/ahmed-zayan-n_YWKiIBnp4-unsplash.jpg';
+import heroImg from '../../images/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg';
 import InsuranceCTA from './InsuranceCTA';
 import InsuranceFAQ from './InsuranceFAQ';
 import FinalCTA from './FinalCTA';
@@ -16,12 +17,12 @@ export default function InvestmentsPage() {
   return (
     <>
       <Header variant="light" />
-        <AboutPageHeader 
+        <AboutPageHeader
             title="Investments"
             label="Services"
         />
       <InsuranceHero
-        img="../../images/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg"
+        img={heroImg}
         title="Grow Your Wealth with Confidence"
         title1="Strategic Investment Solutions"
         title2="for Your Financial Future"

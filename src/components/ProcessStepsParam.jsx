@@ -1,11 +1,15 @@
 import '../styles/ProcessSteps.css';
 import PropTypes from 'prop-types';
+import step1Img from '../../images/kelly-sikkema-CXv5jxuMGBk-unsplash.jpg'
+import step2Img from '../../images/kelly-sikkema-v_yesrC0s2o-unsplash.jpg'
+import step3Img from '../../images/piggybank-cv_gqWoAOYU-unsplash.jpg'
+import step4Img from '../../images/towfiqu-barbhuiya-0ITvgXAU5Oo-unsplash.jpg'
 
 const fallbackImages = [
-  '/images/kelly-sikkema-CXv5jxuMGBk-unsplash.jpg',
-  '/images/kelly-sikkema-v_yesrC0s2o-unsplash.jpg',
-  '/images/piggybank-cv_gqWoAOYU-unsplash.jpg',
-  '/images/towfiqu-barbhuiya-0ITvgXAU5Oo-unsplash.jpg'
+  step1Img,
+  step2Img,
+  step3Img,
+  step4Img
 ];
 
 export default function ProcessSteps({ steps, header = 'HOW THE PROCESS WORKS' }) {

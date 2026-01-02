@@ -1,28 +1,32 @@
 import '../styles/ProcessSteps.css'
+import step1Img from '../../images/kelly-sikkema-CXv5jxuMGBk-unsplash.jpg'
+import step2Img from '../../images/kelly-sikkema-v_yesrC0s2o-unsplash.jpg'
+import step3Img from '../../images/piggybank-cv_gqWoAOYU-unsplash.jpg'
+import step4Img from '../../images/towfiqu-barbhuiya-0ITvgXAU5Oo-unsplash.jpg'
 
 export default function ProcessSteps() {
   const steps = [
     {
       number: '1',
-      image: '/images/kelly-sikkema-CXv5jxuMGBk-unsplash.jpg',
+      image: step1Img,
       title: 'DISCOVERY',
       description: 'We start by getting to know what\'s important to you. We listen to your goals and your vision for the future, and identify any planning gaps that need to be addressed.'
     },
     {
       number: '2',
-      image: '/images/kelly-sikkema-v_yesrC0s2o-unsplash.jpg',
+      image: step2Img,
       title: 'PLAN DEVELOPMENT',
       description: 'Based on our discovery session, we create customized solutions that suit your unique needs. From investments to insurance, we provide recommendations to help you meet your vision for the future.'
     },
     {
       number: '3',
-      image: '/images/piggybank-cv_gqWoAOYU-unsplash.jpg',
+      image: step3Img,
       title: 'IMPLEMENTATION',
       description: 'We help you put the plan into place, so you can start making progress toward your financial goals.'
     },
     {
       number: '4',
-      image: '/images/towfiqu-barbhuiya-0ITvgXAU5Oo-unsplash.jpg',
+      image: step4Img,
       title: 'MAINTENANCE',
       description: 'We understand that life is constantly changing. That\'s why we work with you to ensure your plan always aligns with your current goals, risk tolerance, and needs. We keep up with ever-changing investment and insurance economics so you don\'t have to.'
     }

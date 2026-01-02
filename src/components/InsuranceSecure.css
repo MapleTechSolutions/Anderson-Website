@@ -1,0 +1,120 @@
+.insurance-secure {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background: #fafbfc;
+  padding: 0 0 3rem 0;
+}
+
+.insurance-secure-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 3rem 0 3rem 6vw;
+}
+
+.insurance-secure-img img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+.insurance-secure-content {
+  flex: 1;
+  padding: 3rem 6vw 3rem 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insurance-secure-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.insurance-secure-desc {
+  font-size: 1.25rem;
+  color: #363c44;
+  margin-bottom: 2.2rem;
+  max-width: 90%;
+}
+
+.insurance-secure-products {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 2.2rem;
+}
+
+.insurance-secure-list ul {
+  list-style: disc inside;
+  font-size: 1.25rem;
+  color: #363c44;
+  margin: 0;
+  padding: 0;
+}
+
+.insurance-secure-list li {
+  margin-bottom: 0.7rem;
+}
+
+.insurance-secure-investment {
+  color: #363c44;
+  font-size: 1.1rem;
+  margin-bottom: 2.2rem;
+}
+
+.insurance-learn-more {
+  color: #bfa77a;
+  text-decoration: underline;
+}
+
+.insurance-secure-cta {
+  background: #363c44;
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: background 0.2s;
+}
+.insurance-secure-cta:hover {
+  background: #222;
+}
+.arrow {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .insurance-secure {
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+  }
+  .insurance-secure-img, .insurance-secure-content {
+    padding: 2rem 1rem;
+  }
+  .insurance-secure-title {
+    font-size: 2rem;
+  }
+  .insurance-secure-products {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

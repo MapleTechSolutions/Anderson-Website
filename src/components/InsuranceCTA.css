@@ -1,0 +1,59 @@
+.insurance-cta {
+  width: 100vw;
+  min-height: 220px;
+  background: #222;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0 4.5rem 0;
+  margin: 0;
+}
+
+.insurance-cta-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+.insurance-cta-desc {
+  color: #fff;
+  font-size: 1.35rem;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.insurance-cta-btn {
+  background: #bfa77a;
+  color: #222;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: background 0.2s;
+}
+.insurance-cta-btn:hover {
+  background: #a08a5c;
+}
+.arrow {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .insurance-cta-title {
+    font-size: 2rem;
+  }
+}

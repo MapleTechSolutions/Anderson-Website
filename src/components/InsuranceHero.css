@@ -1,0 +1,75 @@
+.insurance-hero {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 450px;
+  background: #f7f7f7;
+}
+
+.insurance-hero-left {
+  flex: 1;
+  padding: 4rem 3rem 3rem 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insurance-hero-eyebrow {
+  color: #bfa77a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.insurance-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.1;
+}
+
+.insurance-hero-desc {
+  font-size: 1.35rem;
+  color: #363c44;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.insurance-hero-bold {
+  font-size: 1.25rem;
+  color: #222;
+  font-weight: 700;
+  max-width: 90%;
+}
+
+.insurance-hero-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.insurance-hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .insurance-hero {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .insurance-hero-left, .insurance-hero-right {
+    padding: 2rem 1rem;
+  }
+  .insurance-hero-title {
+    font-size: 2.2rem;
+  }
+}

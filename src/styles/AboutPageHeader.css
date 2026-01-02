@@ -1,0 +1,125 @@
+.about-page-header {
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #2d3441 0%, #3a4551 100%);
+}
+
+.about-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/northfolk-Ok76F6yW2iA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.about-header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  color: #fff;
+}
+
+.about-header-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d4a574;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.about-header-label::before,
+.about-header-label::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #d4a574;
+  top: 50%;
+}
+
+.about-header-label::before {
+  right: 100%;
+  margin-right: 20px;
+}
+
+.about-header-label::after {
+  left: 100%;
+  margin-left: 20px;
+}
+
+.about-header-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 1024px) {
+  .about-page-header {
+    min-height: 350px;
+    padding: 50px 30px;
+  }
+
+  .about-header-title {
+    font-size: 56px;
+  }
+
+  .about-header-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-header {
+    min-height: 300px;
+    padding: 40px 20px;
+  }
+
+  .about-header-title {
+    font-size: 44px;
+  }
+
+  .about-header-label {
+    font-size: 13px;
+  }
+
+  .about-header-label::before,
+  .about-header-label::after {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page-header {
+    min-height: 250px;
+    padding: 30px 20px;
+  }
+
+  .about-header-title {
+    font-size: 36px;
+  }
+
+  .about-header-label::before,
+  .about-header-label::after {
+    display: none;
+  }
+}

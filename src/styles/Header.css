@@ -1,0 +1,248 @@
+.about-page-active .header-light .nav-link.dropdown-toggle {
+  color: #222 !important;
+}
+.header {
+  background-color: #3a4551;
+  padding: 20px 0;
+  position: static;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-light {
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-light .logo-section {
+  color: #2f3640;
+}
+
+.header-light .nav-link {
+  color: #2f3640;
+}
+
+.header-light .nav-link:hover {
+  color: #d4a574;
+}
+
+.header-light .dropdown-toggle,
+.nav-link.dropdown-toggle {
+  color: #fff !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: none;
+}
+
+.header-light .dropdown-toggle:hover,
+.nav-link.dropdown-toggle:hover {
+  color: #d4a574 !important;
+}
+
+.header-light .dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.header-light .dropdown-menu a {
+  color: #2f3640;
+}
+
+.header-light .dropdown-menu a:hover {
+  color: #d4a574;
+}
+
+.header-light .cta-button {
+  background-color: #d4a574;
+  color: #2f3640;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+}
+
+.logo-icon {
+  width: 230px;
+  height: auto;
+  object-fit: contain;
+
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.company-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif;
+}
+
+.established {
+  font-size: 11px;
+  color: #b0b8c1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-link:hover {
+  color: #d4a574;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2f3640;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu a:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #3a4551;
+  color: #d4a574;
+}
+
+.cta-button {
+  background-color: #d4a574;
+  color: #2f3640;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 0 0 auto;
+}
+
+.cta-button:hover {
+  background-color: #c49564;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .nav {
+    gap: 30px;
+  }
+
+  .company-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .logo-section {
+    gap: 15px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company-name {
+    font-size: 11px;
+  }
+
+  .nav {
+    gap: 20px;
+    font-size: 13px;
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+}

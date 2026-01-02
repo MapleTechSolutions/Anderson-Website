@@ -1,4 +1,5 @@
 import '../styles/FinalCTA.css'
+import ctaImage from '../../images/annie-spratt-sggw4-qDD54-unsplash.jpg'
 
 export default function FinalCTA() {
   return (
@@ -14,7 +15,7 @@ export default function FinalCTA() {
         </div>
 
         <div className="final-cta-image">
-          <img src="images/annie-spratt-sggw4-qDD54-unsplash.jpg" alt="Financial Planning" />
+          <img src={ctaImage} alt="Financial Planning" />
         </div>
       </div>
     </section>

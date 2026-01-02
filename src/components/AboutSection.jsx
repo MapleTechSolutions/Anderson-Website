@@ -1,11 +1,12 @@
 import '../styles/AboutSection.css'
+import aboutImage from '../../images/northfolk-Ok76F6yW2iA-unsplash.jpg'
 
 export default function AboutSection() {
   return (
     <section className="about-section">
       <div className="about-container">
         <div className="about-image">
-          <img src="/images/northfolk-Ok76F6yW2iA-unsplash.jpg" alt="Anderson Wealth Management" />
+          <img src={aboutImage} alt="Anderson Wealth Management" />
         </div>
 
         <div className="about-content">

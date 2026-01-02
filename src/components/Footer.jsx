@@ -1,5 +1,7 @@
 import '../styles/Footer.css'
 import logo from '../../images/Anderson-Wealth-Horizontal-White.svg'
+import portfolioLogo from '../../images/Portfolio-Strategies-wh.png'
+import horizonsLogo from '../../images/Financial-Horizons-wh.svg'
 
 export default function Footer() {
   return (
@@ -14,10 +16,10 @@ export default function Footer() {
 
           <div className="footer-center">
             <a href="https://portfoliostrategies.ca/" target="_blank" rel="noopener noreferrer" className="brand-logo-link">
-              <img src="/images/Portfolio-Strategies-wh.png" alt="Portfolio Strategies" className="footer-brand-logo" />
+              <img src={portfolioLogo} alt="Portfolio Strategies" className="footer-brand-logo" />
             </a>
             <a href="https://www.financialhorizons.com/" target="_blank" rel="noopener noreferrer" className="brand-logo-link">
-              <img src="/images/Financial-Horizons-wh.svg" alt="Financial Horizons" className="footer-brand-logo" />
+              <img src={horizonsLogo} alt="Financial Horizons" className="footer-brand-logo" />
             </a>
           </div>
 

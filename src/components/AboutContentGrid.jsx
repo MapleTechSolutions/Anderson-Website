@@ -1,4 +1,6 @@
 import '../styles/AboutContentGrid.css'
+import colabImage from '../../images/campaign-creators-qCi_MzVODoU-unsplash.jpg'
+import visionImage from '../../images/alex-hudson-7AgqAZbogOQ-unsplash.jpg'
 
 export default function AboutContentGrid() {
   return (
@@ -16,12 +18,12 @@ export default function AboutContentGrid() {
 
         {/* Top Right - Image */}
         <div className="grid-item image-item">
-          <img src="/images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="Collaborative Partnership" />
+          <img src={colabImage} alt="Collaborative Partnership" />
         </div>
 
         {/* Bottom Left - Image */}
         <div className="grid-item image-item">
-          <img src="/images/alex-hudson-7AgqAZbogOQ-unsplash.jpg" alt="Global Financial Vision" />
+          <img src={visionImage} alt="Global Financial Vision" />
         </div>
 
         {/* Bottom Right - Text */}

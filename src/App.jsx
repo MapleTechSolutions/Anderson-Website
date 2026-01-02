@@ -42,7 +42,7 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Anderson-Website">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />

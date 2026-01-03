@@ -60,7 +60,7 @@ const Chatbot = () => {
     }, 500);
   };
 
-  const handleKeyPress = (e) => {
+  const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
@@ -76,8 +76,11 @@ const Chatbot = () => {
       {/* Chat Toggle Button */}
       {!isOpen && (
         <button className="chatbot-toggle" onClick={toggleChat} aria-label="Open chat">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+            <circle cx="9" cy="10" r="1.5"/>
+            <circle cx="12" cy="10" r="1.5"/>
+            <circle cx="15" cy="10" r="1.5"/>
           </svg>
         </button>
       )}
@@ -89,8 +92,11 @@ const Chatbot = () => {
           <div className="chatbot-header">
             <div className="chatbot-header-content">
               <div className="chatbot-avatar">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+                  <circle cx="9" cy="10" r="1.5"/>
+                  <circle cx="12" cy="10" r="1.5"/>
+                  <circle cx="15" cy="10" r="1.5"/>
                 </svg>
               </div>
               <div className="chatbot-title">
@@ -112,10 +118,11 @@ const Chatbot = () => {
               <div key={index} className={`message ${msg.type}`}>
                 {msg.type === 'bot' && (
                   <div className="message-avatar">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                      <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                      <circle cx="9" cy="11" r="1.5"/>
+                      <circle cx="15" cy="11" r="1.5"/>
+                      <path d="M12 17.5c2.33 0 4.32-1.45 5.12-3.5H6.88c.8 2.05 2.79 3.5 5.12 3.5z"/>
                     </svg>
                   </div>
                 )}
@@ -154,7 +161,7 @@ const Chatbot = () => {
               placeholder="Type your question..."
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyDown={handleKeyDown}
             />
             <button
               className="chatbot-send"

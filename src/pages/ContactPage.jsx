@@ -24,36 +24,51 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus('Sending...');
 
-    // Create mailto link with form data
-    const subject = `Contact Form: ${formData.service || 'General Inquiry'}`;
-    const body = `Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Service Interest: ${formData.service}
-
-Message:
-${formData.message}`;
-
-    const mailtoLink = `mailto:contact@andersonwealth.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
-
-    setStatus('Opening your email client...');
-
-    // Reset form after short delay
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '268fc010-6d96-4d1c-b8dd-a46d6a05c7b4',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+          subject: `Contact Form: ${formData.service || 'General Inquiry'}`,
+          from_name: 'Anderson Wealth Website',
+          to_email: 'jinilpatel176@gmail.com'
+        })
       });
-      setStatus('');
-    }, 2000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('✓ Message sent successfully! We\'ll get back to you soon.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+        // Clear success message after 5 seconds
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('✗ Failed to send message. Please try again or email us directly.');
+      }
+    } catch (error) {
+      setStatus('✗ Failed to send message. Please try again or email us directly.');
+      console.error('Form submission error:', error);
+    }
   };
 
   return (
@@ -202,10 +217,25 @@ ${formData.message}`;
                   ></textarea>
                 </div>
 
-                {status && <p className="form-status">{status}</p>}
+                {status && (
+                  <p
+                    className="form-status"
+                    style={{
+                      backgroundColor: status.includes('✓') ? '#d4f4dd' : status.includes('✗') ? '#ffe5e5' : '#e3f2fd',
+                      color: status.includes('✓') ? '#2d6a3e' : status.includes('✗') ? '#c92a2a' : '#1565c0',
+                      border: status.includes('✓') ? '1px solid #a8e6b8' : status.includes('✗') ? '1px solid #ffa8a8' : '1px solid #90caf9'
+                    }}
+                  >
+                    {status}
+                  </p>
+                )}
 
-                <button type="submit" className="submit-button">
-                  Send Message
+                <button
+                  type="submit"
+                  className="submit-button"
+                  disabled={status === 'Sending...'}
+                >
+                  {status === 'Sending...' ? 'Sending...' : 'Send Message'}
                 </button>
 
                 <p className="form-note">

@@ -18,6 +18,7 @@ import AboutPage from './pages/AboutPage'
 import ServicesPage from './components/ServicesPage'
 import InsurancePage from './components/InsurancePage'
 import InvestmentsPage from './components/InvestmentsPage'
+import Chatbot from './components/Chatbot'
 
 function HomePage() {
   return (
@@ -36,6 +37,7 @@ function HomePage() {
       <AboutSection />
       <FinalCTA />
       <Footer />
+      <Chatbot />
     </>
   )
 }

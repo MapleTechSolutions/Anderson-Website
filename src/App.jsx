@@ -18,6 +18,7 @@ import AboutPage from './pages/AboutPage'
 import ServicesPage from './components/ServicesPage'
 import InsurancePage from './components/InsurancePage'
 import InvestmentsPage from './components/InvestmentsPage'
+import ContactPage from './pages/ContactPage'
 import Chatbot from './components/Chatbot'
 
 function HomePage() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/insurance" element={<InsurancePage />} />
         <Route path="/investments" element={<InvestmentsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Chatbot />
     </BrowserRouter>

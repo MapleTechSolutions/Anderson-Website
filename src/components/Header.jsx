@@ -18,7 +18,8 @@ export default function Header({ variant = 'dark' }) {
       location.pathname === '/about' ||
       location.pathname === '/services' ||
       location.pathname === '/insurance' ||
-      location.pathname === '/investments'
+      location.pathname === '/investments' ||
+      location.pathname === '/contact'
     ) {
       document.body.classList.add('about-page-active');
     } else {
@@ -64,7 +65,7 @@ export default function Header({ variant = 'dark' }) {
               </div>
             )}
           </div>
-          <a href="#contact" className="nav-link">Contact</a>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
 
         <button className="cta-button">BOOK A FREE CONSULTATION</button>

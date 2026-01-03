@@ -68,7 +68,9 @@ export default function Header({ variant = 'dark' }) {
           <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
 
-        <button className="cta-button">BOOK A FREE CONSULTATION</button>
+        <Link to="/booking" className="cta-button">
+          BOOK A FREE CONSULTATION
+        </Link>
       </div>
     </header>
   )

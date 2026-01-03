@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/FinalCTA.css'
 import ctaImage from '../../images/annie-spratt-sggw4-qDD54-unsplash.jpg'
 
@@ -11,7 +12,9 @@ export default function FinalCTA() {
           <p className="final-cta-text">
             Building a successful financial future requires a partnership built on compatibility and care. At Anderson Wealth Management, we are more than just financial advisors – we become your trusted partners on this journey. Our approach centers around fostering a deep understanding of your values, aspirations, and financial objectives, allowing us to provide tailored solutions that resonate with you on a personal level.
           </p>
-          <button className="final-cta-button">BOOK A FREE CONSULT →</button>
+          <Link to="/booking" className="final-cta-button">
+            BOOK A FREE CONSULT →
+          </Link>
         </div>
 
         <div className="final-cta-image">

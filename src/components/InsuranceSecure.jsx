@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './InsuranceSecure.css';
 import PropTypes from 'prop-types';
 
@@ -9,8 +10,7 @@ export default function InsuranceSecure({
   products = [],
   investmentText,
   investmentLink,
-  ctaText = 'BOOK A FREE CONSULTATION',
-  onCtaClick
+  ctaText = 'BOOK A FREE CONSULTATION'
 }) {
   return (
     <section className="insurance-secure">
@@ -34,9 +34,9 @@ export default function InsuranceSecure({
             {investmentText} {investmentLink && <a href={investmentLink.href} className="insurance-learn-more">{investmentLink.text}</a>}
           </div>
         )}
-        <button className="insurance-secure-cta" onClick={onCtaClick}>
+        <Link to="/booking" className="insurance-secure-cta">
           {ctaText} <span className="arrow">→</span>
-        </button>
+        </Link>
       </div>
     </section>
   );
@@ -50,6 +50,5 @@ InsuranceSecure.propTypes = {
   products: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
   investmentText: PropTypes.string,
   investmentLink: PropTypes.shape({ href: PropTypes.string, text: PropTypes.string }),
-  ctaText: PropTypes.string,
-  onCtaClick: PropTypes.func
+  ctaText: PropTypes.string
 };

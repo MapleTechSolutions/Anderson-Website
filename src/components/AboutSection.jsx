@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/AboutSection.css'
 import aboutImage from '../../images/northfolk-Ok76F6yW2iA-unsplash.jpg'
 
@@ -20,7 +21,9 @@ export default function AboutSection() {
             We offer personalized guidance to help you navigate these options and select the investment strategy that best aligns with your unique circumstances and goals.
           </p>
 
-          <button className="about-button">BOOK A FREE CONSULTATION →</button>
+          <Link to="/booking" className="about-button">
+            BOOK A FREE CONSULTATION →
+          </Link>
         </div>
       </div>
     </section>

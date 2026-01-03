@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/AboutContentGrid.css'
 import colabImage from '../../images/campaign-creators-qCi_MzVODoU-unsplash.jpg'
 import visionImage from '../../images/alex-hudson-7AgqAZbogOQ-unsplash.jpg'
@@ -31,7 +32,9 @@ export default function AboutContentGrid() {
           <p className="grid-text">
             Our mission is to work collaboratively with you to develop a comprehensive financial strategy that addresses all aspects of your unique life. Whether your goals involve saving for your children's education, purchasing your dream home, planning for a comfortable retirement, or transitioning a business to the next generation – we are here to guide you every step of the way. With our expert advice and unwavering support, we help you build a brighter financial future for yourself and those you love.
           </p>
-          <button className="grid-cta-button">BOOK A FREE CONSULTATION →</button>
+          <Link to="/booking" className="grid-cta-button">
+            BOOK A FREE CONSULTATION →
+          </Link>
         </div>
       </div>
     </section>

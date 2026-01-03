@@ -37,7 +37,6 @@ function HomePage() {
       <AboutSection />
       <FinalCTA />
       <Footer />
-      <Chatbot />
     </>
   )
 }
@@ -53,6 +52,7 @@ function App() {
         <Route path="/insurance" element={<InsurancePage />} />
         <Route path="/investments" element={<InvestmentsPage />} />
       </Routes>
+      <Chatbot />
     </BrowserRouter>
   )
 }

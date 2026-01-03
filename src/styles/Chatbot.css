@@ -2,7 +2,7 @@
 .chatbot-toggle {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: 100px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -41,7 +41,7 @@
 .chatbot-container {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  right: 100px;
   width: 380px;
   height: 550px;
   background-color: #ffffff;
@@ -323,7 +323,7 @@
   }
 
   .chatbot-toggle {
-    bottom: 16px;
+    bottom: 80px;
     right: 16px;
     width: 56px;
     height: 56px;
@@ -341,6 +341,11 @@
     bottom: 8px;
     right: 8px;
     border-radius: 12px;
+  }
+
+  .chatbot-toggle {
+    bottom: 80px;
+    right: 8px;
   }
 
   .chatbot-header {

@@ -25,14 +25,16 @@
   color: #d4a574;
 }
 
-.header-light .dropdown-toggle,
-.nav-link.dropdown-toggle {
-  color: #fff !important;
+
+.header-light .dropdown-toggle {
+  color: #222 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   background: none;
 }
+
+
 
 .header-light .dropdown-toggle:hover,
 .nav-link.dropdown-toggle:hover {

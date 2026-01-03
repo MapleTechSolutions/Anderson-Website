@@ -8,7 +8,6 @@ export default function BookingPage() {
     <>
       <Header 
         variant="light"
-        
       />
       <AboutPageHeader
         title="Book Your Free Consultation"

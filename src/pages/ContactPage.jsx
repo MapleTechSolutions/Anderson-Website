@@ -188,7 +188,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="service">Service Interest</label>
+                  <label htmlFor="service">Insurance</label>
                   <select
                     id="service"
                     name="service"
@@ -196,11 +196,10 @@ export default function ContactPage() {
                     onChange={handleChange}
                   >
                     <option value="">Select a service...</option>
-                    <option value="Insurance">Insurance</option>
-                    <option value="Investments">Investments</option>
-                    <option value="Both Insurance and Investments">Both Insurance and Investments</option>
-                    <option value="General Consultation">General Consultation</option>
-                    <option value="Not Sure">I'm not sure</option>
+                    <option value="Benefits">Benefits</option>
+                    <option value="Investing">Investing</option>
+                    <option value="Lending">Lending</option>
+                    <option value="Not Sure">I'm not sure.</option>
                   </select>
                 </div>
 

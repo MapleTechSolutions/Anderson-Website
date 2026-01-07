@@ -220,15 +220,18 @@
   .header-container {
     flex-wrap: wrap;
     padding: 0 15px;
+    gap: 15px;
   }
 
   .logo-section {
     gap: 15px;
+    flex: 1;
   }
 
   .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 180px;
+    height: auto;
+    min-width: 150px;
   }
 
   .company-name {
@@ -236,15 +239,54 @@
   }
 
   .nav {
-    gap: 20px;
+    gap: 15px;
     font-size: 13px;
     order: 3;
     width: 100%;
     margin-top: 15px;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 14px;
   }
 
   .cta-button {
-    padding: 10px 20px;
-    font-size: 11px;
+    padding: 10px 16px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .logo-icon {
+    width: 140px;
+    min-width: 120px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .cta-button {
+    padding: 8px 12px;
+    font-size: 9px;
+  }
+
+  .dropdown-menu {
+    min-width: 150px;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 15px;
+    font-size: 13px;
   }
 }

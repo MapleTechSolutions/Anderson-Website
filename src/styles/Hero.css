@@ -86,16 +86,17 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 300px;
-    padding: 20px 15px;
+    min-height: 350px;
+    padding: 30px 20px;
   }
 
   .hero-title {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 12px;
   }
 
   .hero-subtitle {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
